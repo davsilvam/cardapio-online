@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Cardápio Online</string>
+    <string name="header_title">Cardápio Online</string>
+
+    <string name="text_appetizer">Entradas</string>
+    <string name="text_main_course">Pratos Principais</string>
+    <string name="text_drinks">Bebidas</string>
+    <string name="text_dessert">Sobremesas</string>
+
+    <string name="label_total_price">Total</string>
+    <string name="text_total_price">R$ 0,00</string>
+    <string name="label_total_time">Tempo Estimado</string>
+    <string name="text_total_time">0 minutos</string>
+    <string name="button_checkout">Finalizar Pedido</string>
+</resources>

@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CardapioOnline" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="Theme.CardapioOnline" parent="Base.Theme.CardapioOnline">
+        <!-- Primary -->
+        <item name="colorPrimary">@color/orange_700</item>
+        <item name="colorPrimaryVariant">@color/orange_600</item>
+        <item name="colorOnPrimary">@color/stone_50</item>
+
+        <!-- Secondary -->
+        <item name="colorSecondary">@color/stone_500</item>
+        <item name="colorSecondaryVariant">@color/stone_700</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Background -->
+        <item name="android:windowBackground">@color/stone_100</item>
+        <item name="android:colorBackground">@color/stone_100</item>
+
+        <!-- Text -->
+        <item name="android:textColorPrimary">@color/stone_950</item>
+        <item name="android:textColorSecondary">@color/stone_600</item>
+        <item name="android:textColor">@color/stone_950</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <!-- Navigation Bar -->
+        <item name="android:navigationBarColor" tools:targetApi="o_mr1">?attr/colorPrimaryVariant
+        </item>
+    </style>
+</resources>
