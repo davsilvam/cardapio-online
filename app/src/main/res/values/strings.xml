@@ -7,6 +7,9 @@
     <string name="text_drinks">Bebidas</string>
     <string name="text_dessert">Sobremesas</string>
 
+    <string name="text_preferences">Preferências do cliente</string>
+    <string name="edit_text_preferences_hint">Quero um limão!</string>
+
     <string name="label_total_price">Total</string>
     <string name="text_total_price">R$ 0,00</string>
     <string name="label_total_time">Tempo Estimado</string>

@@ -141,11 +141,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateTotalPrice() {
         val totalPrice = getSelectedOptionsPrice()
-        val format = NumberFormat.getCurrencyInstance()
-        format.currency = Currency.getInstance("BRL")
+        val formatter = NumberFormat.getCurrencyInstance()
+        formatter.currency = Currency.getInstance("BRL")
 
         binding.textTotalPrice.text =
-            "${format.format(totalPrice).replace(".", ",").replace("R$", "R$ ")}"
+            formatter.format(totalPrice).replace(".", ",").replace("R$", "R$ ")
     }
 
     private fun getSelectedOptionsTime(): Int {
@@ -167,11 +167,11 @@ class MainActivity : AppCompatActivity() {
         val totalPrice = getSelectedOptionsPrice()
 
         if (totalPrice > 0) {
-            val format = NumberFormat.getCurrencyInstance()
-            format.currency = Currency.getInstance("BRL")
+            val formatter = NumberFormat.getCurrencyInstance()
+            formatter.currency = Currency.getInstance("BRL")
 
             val message =
-                "O pedido foi enviado ao balcão. O valor total é " + format.format(totalPrice)
+                "O pedido foi enviado ao balcão. O valor total é " + formatter.format(totalPrice)
 
             Toast.makeText(this, message, Toast.LENGTH_LONG).show()
         } else {

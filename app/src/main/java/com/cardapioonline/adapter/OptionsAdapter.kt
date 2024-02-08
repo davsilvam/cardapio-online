@@ -25,11 +25,11 @@ class OptionsAdapter(private val context: Context, private val optionsList: Muta
         holder.image.contentDescription = "Imagem de ${option.name}"
         holder.name.text = option.name
 
-        val format = NumberFormat.getCurrencyInstance()
-        format.maximumFractionDigits = 2
-        format.currency = Currency.getInstance("BRL")
+        val formatter = NumberFormat.getCurrencyInstance()
+        formatter.maximumFractionDigits = 2
+        formatter.currency = Currency.getInstance("BRL")
 
-        holder.price.text = "${format.format(option.price).replace(".", ",").replace("R$", "R$ ")}"
+        holder.price.text = formatter.format(option.price).replace(".", ",").replace("R$", "R$ ")
         holder.time.text = option.time.toString() + " minutos"
 
         holder.checkbox.isChecked = option.isChecked
